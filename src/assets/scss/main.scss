@@ -1,0 +1,64 @@
+@import "blanks/button";
+
+@import "sections/header/header";
+@import "sections/footer/footer";
+@import "sections/intro/intro";
+@import "sections/category/category";
+@import "sections/products/products";
+@import "sections/advantage/advantage";
+@import "sections/feedback/feedback";
+@import "sections/breadcrumbs/breadcrumbs";
+@import "sections/shop/shop";
+@import "sections/filter/filter";
+@import "sections/sort/sort";
+@import "sections/card/card";
+@import "sections/slider/slider";
+@import "sections/specification/specification";
+@import "sections/more/more";
+@import "sections/cart/cart";
+@import "sections/registration/registration";
+
+
+
+
+
+
+
+
+
+
+@import "utility/fonts";
+@import "utility/mixins";
+@import "utility/vars";
+@import "utility/reset";
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+@media screen and (max-width:810px){
+    .container {
+        max-width: 736px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .container {
+        max-width: 375px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

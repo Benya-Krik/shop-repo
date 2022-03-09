@@ -1,0 +1,25 @@
+.more {
+  
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 360px 360px 360px;
+        padding-bottom: 64px;
+        grid-gap: 30px;
+
+        @media screen and (max-width:1200px) {
+            justify-content: center;
+            grid-template-columns: 360px 360px;
+            grid-gap: 16px;
+
+            & article:last-child {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            justify-content: center;
+            grid-template-columns: 360px;
+            grid-gap: 16px;
+        }
+    }
+}

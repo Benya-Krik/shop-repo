@@ -1,0 +1,59 @@
+.filter {
+  cursor: pointer;
+  padding-left: 16px;
+}
+
+.filter__logo {
+  margin-left: 12px;
+}
+
+.filter__position {
+  position: absolute;
+  font-weight: 600;
+  font-size: 14px;
+  width: 328px;
+}
+
+.filter__position[open] {
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  top: -12px;
+  left: 0;
+  padding: 12px 16px 16px 16px;
+  background-color: #FFFFFF;
+  color: #EF5B70;
+}
+
+.filter__position[open] path {
+  fill: #F16D7F;
+}
+
+.filter a {
+  color: #6F6E6E;
+}
+
+.filter__wrap details {
+  margin-top: 18px;
+  color: #6F6E6E;
+}
+
+.filter__wrap details ul {
+  padding-left: 20px;
+  padding-top: 36px;
+  padding-bottom: 12px;
+  list-style: none;
+  color: #6F6E6E;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.filter__wrap details ul li {
+  margin-bottom: 12px;
+}
+
+.filter__wrap details summary {
+  border-left: #F16D7F 5px solid;
+  border-bottom: #EBEBEB 1px solid;
+  padding: 12px;
+}
+/*# sourceMappingURL=filter.css.map */

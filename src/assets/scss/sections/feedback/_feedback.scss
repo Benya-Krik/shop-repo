@@ -1,0 +1,105 @@
+.feedback {
+    background-image: url(/src/assets/img/background_review.png);
+    background-position: left;    
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__background {
+        background: rgba(255, 255, 255, 0.7);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__wrap {
+        padding: 96px 0 156px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and(max-width:1000px) {
+            flex-direction: column;
+            gap: 48px;
+        }
+    }
+
+    &__review {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__photo {
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 28px;
+        text-align: center;
+    }
+
+    &__subscribe {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tittle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 32px;
+
+        & h3 {
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        & h2 {
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+    }
+
+    &__form {
+        display: flex;
+        width: 360px;
+
+        & input {
+            flex-grow: 2.5;
+            border-radius: 100px 0 0 100px;
+            border: none;
+            padding: 20px;
+            outline: none;
+            background-color: #E1E1E1;
+            font-weight: 400;
+            font-size: 14px;
+            color: #222224;
+        }
+
+        & button {
+            flex-grow: 1;
+            border-radius: 0 100px 100px 0;
+            padding: 20px;
+            border: none;
+            background-color: #F16D7F;
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 14px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.85;
+            }
+        }
+    }
+}

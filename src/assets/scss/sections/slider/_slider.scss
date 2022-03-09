@@ -1,0 +1,46 @@
+.slider {
+    background-color: #f7f7f7;
+
+    &__wrapper {
+      position: relative;
+      height: 700px;
+    }
+
+    &__button {
+      position: absolute;
+
+      &:hover {
+        & path:last-child {
+          fill: #F16D7F;
+        }
+      }
+
+      &--left{
+        left: 0;
+        top: 50%;
+        z-index: 1;
+      }
+
+      &--right{
+        right: 0;
+        top: 50%;
+        z-index: 1;
+      }
+    }
+
+    &__photo {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      & img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        max-width: 100%;
+      }
+    }
+}
+  
+  

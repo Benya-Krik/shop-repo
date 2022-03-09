@@ -1,0 +1,43 @@
+.footer {
+    background-color: #222224;
+
+    &__wrap {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media screen and (max-width:1100px){
+            justify-content: center;
+            gap: 24px;
+          }
+    }
+
+    &__info {
+        color: #fbfbfb;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    &__socials {
+        display: flex;
+        
+        & svg {
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+
+            &:hover {
+                & path:not(:last-child) {
+                    fill: #f16d7f;
+                }
+                & path:last-child {
+                    fill: #FFFFFF;
+                }
+                cursor: pointer;
+            }
+        }
+    }
+}
