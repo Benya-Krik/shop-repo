@@ -1,5 +1,6 @@
 .header {
   background-color: #222222;
+  position: relative;
 }
 
 .header__position {
@@ -36,7 +37,11 @@
   cursor: pointer;
 }
 
-.header__account, .header__burger {
+.header__burger {
+  margin-right: 32px;
+}
+
+.header__account {
   margin-right: 32px;
 }
 
@@ -58,10 +63,10 @@
   color: #FFFFFF;
 }
 
-.header__cart span {
+.header__meter {
   position: absolute;
   top: -8px;
-  right: -6px;
+  right: -8px;
   font-size: 12px;
   background-color: #F16D7F;
   border-radius: 50%;
@@ -230,6 +235,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .intro {
+    height: 88vh;
+  }
   .intro__wrap {
     height: 100%;
     display: -webkit-box;
@@ -2037,6 +2045,214 @@
 
 .registration ul li:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.burger__btn {
+  background-color: red;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.burger__btn:hover span {
+  opacity: 0.8;
+}
+
+.burger__btn span {
+  display: block;
+  position: relative;
+  width: 32px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.burger__btn span::before {
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background-color: #ffffff;
+  content: '';
+  top: -12px;
+}
+
+.burger__btn span::after {
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 2px;
+  background-color: #ffffff;
+  content: '';
+  top: 12px;
+}
+
+.burger__box {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  height: 81.5vh;
+  width: 360px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.4);
+  padding: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width: 1100px) {
+  .burger__box {
+    height: 95vh;
+    width: 100vw;
+    z-index: 3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.burger__box li {
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1100px) {
+  .burger__box li {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-height: 1040px) {
+  .burger__box li {
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-height: 780px) {
+  .burger__box li {
+    margin-bottom: 8px;
+  }
+}
+
+.burger__item {
+  font-size: 16px;
+  color: #F16D7F;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1100px) {
+  .burger__item {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-height: 1040px) {
+  .burger__item {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (max-height: 780px) {
+  .burger__item {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.burger__item--tiny {
+  margin-left: 20px;
+  color: #6F6E6E;
+  display: block;
+}
+
+@media screen and (max-width: 1100px) {
+  .burger__item--tiny {
+    font-size: 26px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-height: 1040px) {
+  .burger__item--tiny {
+    font-size: 12px;
+  }
+}
+
+.burger__block {
+  margin-bottom: 36px;
+}
+
+@media screen and (max-height: 1040px) {
+  .burger__block {
+    margin-bottom: 16px;
+  }
+}
+
+.burger__title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1100px) {
+  .burger__title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (max-height: 1040px) {
+  .burger__title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
+
+#burger__toggle {
+  display: none;
+}
+
+#burger__toggle:checked ~ .burger__btn span {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#burger__toggle:checked ~ .burger__btn span::before {
+  top: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#burger__toggle:checked ~ .burger__btn span::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#burger__toggle:checked ~ .burger__box {
+  visibility: visible;
 }
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {

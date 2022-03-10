@@ -1,5 +1,6 @@
 .header {
     background-color: #222222;
+    position: relative;
 
     &__position {
     display: flex;
@@ -25,7 +26,11 @@
         }
     }
 
-    &__account,&__burger {
+    &__burger {
+        margin-right: 32px;
+    }
+
+    &__account {
         margin-right: 32px;
     } 
 
@@ -48,21 +53,21 @@
     &__cart {
         position: relative;
         color: #FFFFFF;
+    }
 
-        & span {
-            position: absolute;
-            top: -8px;
-            right: -6px;
-            font-size: 12px;
-            background-color: #F16D7F;
-            border-radius: 50%;
-            width: 50%;
-            height: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Lato', sans-serif;
-        }
+    &__meter {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        font-size: 12px;
+        background-color: #F16D7F;
+        border-radius: 50%;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lato', sans-serif;
     }
 
     @media screen and (max-width:480px){
