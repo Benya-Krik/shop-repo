@@ -32,7 +32,7 @@
             width: 100%;
             max-height: 180px;
             margin-top: 2.5%;
-            background-image: url(shop-repo/src/assets/img/accesories.png);
+            background-image: url(src/assets/img/accesories.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: 100%;
@@ -54,19 +54,19 @@
         }
 
         &--first {
-            background-image: url(shop-repo/src/assets/img/forwomen.png);
+            background-image: url(src/assets/img/forwomen.png);
             background-size: 100%;
             background-repeat: no-repeat;
         }
 
         &--second {
-            background-image: url(shop-repo/src/assets/img/formen.png);
+            background-image: url(src/assets/img/formen.png);
             background-size: 100%;
             background-repeat: no-repeat;
         }
 
         &--third {
-            background-image: url(shop-repo/src/assets/img/forkids.png);
+            background-image: url(src/assets/img/forkids.png);
             background-size: 100%;
             background-repeat: no-repeat;
         } 
