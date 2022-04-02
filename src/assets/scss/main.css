@@ -2297,6 +2297,14 @@ table {
   font-family: 'Lato', sans-serif;
 }
 
+* summary {
+  display: block;
+}
+
+* summary::-webkit-details-marker {
+  display: none;
+}
+
 .container {
   max-width: 1160px;
   margin: 0 auto;

@@ -32,6 +32,14 @@
     outline: none;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
+
+    summary {
+        display: block;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+    }
 }
 
 .container {
