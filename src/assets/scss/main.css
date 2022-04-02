@@ -311,7 +311,7 @@
   width: 100%;
   max-height: 180px;
   margin-top: 2.5%;
-  background-image: url(src/assets/img/accesories.png);
+  background-image: url(../img/accesories.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -333,19 +333,19 @@
 }
 
 .category__item--first {
-  background-image: url(src/assets/img/forwomen.png);
+  background-image: url(../img/forwomen.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .category__item--second {
-  background-image: url(src/assets/img/formen.png);
+  background-image: url(../img/formen.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .category__item--third {
-  background-image: url(src/assets/img/forkids.png);
+  background-image: url(../img/forkids.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -563,7 +563,7 @@
 }
 
 .feedback {
-  background-image: url(src/assets/img/background_review.png);
+  background-image: url(../img/background_review.png);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
